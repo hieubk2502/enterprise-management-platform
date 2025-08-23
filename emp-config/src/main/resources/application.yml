@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: emp-config
+  profiles:
+    active: native # because config server using git default
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared

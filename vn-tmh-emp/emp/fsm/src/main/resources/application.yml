@@ -1,0 +1,16 @@
+server:
+  port: ${SERVER_PORT:8061}
+  servlet:
+    context-path: ${CONTEXT_PATH:/fsm}
+spring:
+  application:
+    name: vn.tmh.emp.fsm
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  config:
+    import: optional:configserver:${SPRING_CLOUD_CONFIG_URL:http://localhost:8888}
+  cloud:
+    config:
+      fail-fast: true
+      name: ${SPRING_CLOUD_CONFIG_NAME:vn.tmh.emp.fsm}
+

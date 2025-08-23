@@ -1,0 +1,16 @@
+server:
+  port: ${SERVER_PORT:8063}
+  servlet:
+    context-path: ${CONTEXT_PATH:/noti}
+spring:
+  application:
+    name: vn.tmh.emp.noti
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  config:
+    import: optional:configserver:${SPRING_CLOUD_CONFIG_URL:http://localhost:8888}
+  cloud:
+    config:
+      fail-fast: true
+      name: ${SPRING_CLOUD_CONFIG_NAME:vn.tmh.emp.noti}
+

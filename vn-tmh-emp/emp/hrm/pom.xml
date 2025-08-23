@@ -22,5 +22,11 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>vn.tmh.emp.general</groupId>
+			<artifactId>general</artifactId>
+			<version>0.0.1</version>
+		</dependency>
 	</dependencies>
 </project>
