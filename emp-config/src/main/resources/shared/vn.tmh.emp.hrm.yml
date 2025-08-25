@@ -10,8 +10,6 @@ logging:
         hikari: DEBUG
         hikari.HikariConfig: DEBUG
 spring:
-  application:
-    name: vn.tmh.emp.hrm
   datasource:
     url: ${POSTGRES_DATASOURCE_URL:jdbc:postgresql://localhost:5432/emp?useUnicode=yes&characterEncoding=UTF-8&serverTimezone=Asia/Ho_Chi_Minh}
     username: ${POSTGRES_USERNAME:postgres}

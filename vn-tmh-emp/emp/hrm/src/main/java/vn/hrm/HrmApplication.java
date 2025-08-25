@@ -16,7 +16,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @EnableJpaRepositories(basePackages = {"vn.hrm.*", "com.general.*"})
 @EntityScan(basePackages = {"vn.hrm.*", "com.general.*"})
 @EnableFeignClients(basePackages = {"vn.hrm", "com.general.*"})
-//@EnableEurekaClient
 @EnableAsync
 public class HrmApplication {
 

@@ -1,0 +1,10 @@
+server:
+  port: ${SERVER_PORT:9999}
+eureka:
+  client:
+    register-with-eureka: ${EUREKA_CLIENT_ENABLED:false} # tells the built-in eureka client to not register its self with eureka
+    fetch-registry: false
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICE_URL:http://localhost:9999/eureka/}
+  instance:
+    preferIpAddress: ${EUREKA_INSTANCE_PREFER_IP_ADDRESS:true}

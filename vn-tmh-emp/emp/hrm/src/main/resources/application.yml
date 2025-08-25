@@ -12,5 +12,5 @@ spring:
   cloud:
     config:
       fail-fast: true
-      name: ${SPRING_CLOUD_CONFIG_NAME:vn.tmh.emp.hrm}
+      name: ${SPRING_CLOUD_CONFIG_NAME:vn.tmh.emp.hrm, common}
 

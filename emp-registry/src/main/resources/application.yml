@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: vn.emp.registry
+  config:
+    import: optional:configserver:http://localhost:8888/
+  cloud:
+    config:
+      fail-fast: true # registry server is not running if can't reach the config-server
+
+
