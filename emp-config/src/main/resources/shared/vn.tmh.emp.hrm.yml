@@ -1,7 +1,7 @@
 server:
   port: ${SERVER_PORT:8065}
   servlet:
-    context-path: ${CONTEXT_PATH:/hrm}
+    context-path: ${CONTEXT_PATH:/}
 logging:
   #  config: classpath:logback-spring.xml
   level:

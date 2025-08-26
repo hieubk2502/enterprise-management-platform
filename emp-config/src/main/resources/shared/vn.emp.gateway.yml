@@ -1,0 +1,18 @@
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: ${CONTEXT_PATH:/}
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: VN.TMH.EMP.HRM
+          uri: lb://VN.TMH.EMP.HRM
+          predicates:
+            - Path=/emp/hrm/**
+          filters:
+            - StripPrefix=2
+
