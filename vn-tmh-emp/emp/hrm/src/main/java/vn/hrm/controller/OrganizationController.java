@@ -1,5 +1,6 @@
 package vn.hrm.controller;
 
+import com.general.service.client.HrmService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -19,7 +20,7 @@ import vn.hrm.service.OrganizationService;
 public class OrganizationController {
 
     OrganizationService organizationService;
-
+    HrmService hrmService;
     @GetMapping("/search")
     public OrganizationSearchSdo search(OrganizationSearchSdi request) {
 
